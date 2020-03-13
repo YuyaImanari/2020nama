@@ -3,5 +3,18 @@ head {
 }
 
 body {
+font-family: ;
+letter-spacing: .1em;
+word-break: break-all;
+display: block;
+}
 
+.catch {
+    text-align: center;
+}
+
+.section {
+    background-color: #b3d4fc;
+    color: black;
+    text-shadow: none;
 }
