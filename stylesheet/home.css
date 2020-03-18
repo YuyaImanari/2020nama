@@ -3,7 +3,9 @@ head {
 }
 
 body {
-font-family: ;
+font-family:"Noto Sans Japanese", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;;
+font-weight: 400;
+font-size: 14px;
 letter-spacing: .1em;
 word-break: break-all;
 display: block;
@@ -13,8 +15,45 @@ display: block;
     text-align: center;
 }
 
-.section {
-    background-color: #b3d4fc;
-    color: black;
-    text-shadow: none;
+h2 {
+    background-repeat: no-repeat;
+    color: #333;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700px;
+    letter-spacing: 4.4px;
+    box-sizing: border-box;
+    display: block;
+    margin-block-end: 40px;
+
+}
+
+.line {
+    border-bottom: 2px solid #333;
+    background-repeat: no-repeat;
+}
+
+.contest-block {
+    padding: 25px 20px;
+    background-color: #fff;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    box-sizing: inherit;
+    font-size: 14px;
+}
+
+.prize-list {
+    color: blue;
+}
+
+.prize-grandprix {
+    color: red;
+}
+
+.prize-others {
+    color: green;
 }
