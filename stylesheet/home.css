@@ -57,3 +57,42 @@ ul {
 .prize-others {
     color: green;
 }
+
+li {
+    display: list-item;
+    text-align: left;
+    list-style-type: none;
+}
+
+.schedule-list-item {
+    border-bottom: 2px solid #eee;
+}
+
+.schedule-list-item__inner {
+    background-color: rgb(214, 11, 15);
+}
+
+.schedule-list-time_year, .schedule-list-time_month, .schedule-list-time_day {
+    color: rgb(255, 255, 255);
+}
+
+.schedule-list-info__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.-gray {
+    background-color: #EEEEEE;
+}
+
+dt {
+    display: block;
+    font-size: 14px;
+}
+
+dd {
+    display: block;
+    margin-left: 40px;
+    border-bottom: solid 1px rgb(136, 136, 136);
+}
