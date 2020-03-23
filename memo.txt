@@ -1,0 +1,21 @@
+CSS
+
+text-decoration inherit
+
+margin
+margin-block-start = margin-top
+margin-block-end = margin-bottom
+margin-inline-start = margin-left
+margin-inline-end = margin-right
+
+padding
+padding-block-start = padding-top
+padding-block-end = padding-bottom
+padding-inline-start = padding-left
+padding-inline-end = padding-right
+
+border
+border-block-start = border-top
+border-block-end = border-bottom
+border-inline-start = border-left
+border-inline-end = border-right
