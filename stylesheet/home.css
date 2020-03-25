@@ -11,6 +11,10 @@ word-break: break-all;
 display: block;
 }
 
+.inner {
+    padding: 0 15px
+}
+
 .catch {
     text-align: center;
     font-size: 14px;
@@ -59,7 +63,8 @@ ul {
 }
 
 .prize-list {
-    color: blue;
+    color: #333;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -70,11 +75,15 @@ ul {
 }
 
 .prize-grandprix::before {
-    content: url(https://resource.lap.recochoku.jp/e8/contents/web/project/common/icon_result2.png);
+    background-image: url(https://resource.lap.recochoku.jp/e8/contents/web/project/common/icon_result2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
 }
 
 .prize-grandprix::after {
-    content: url(https://resource.lap.recochoku.jp/e8/contents/web/project/common/icon_result2.png);
+    background-image: url(https://resource.lap.recochoku.jp/e8/contents/web/project/common/icon_result2.png);
+
 }
 
 .prize-others {
@@ -121,7 +130,7 @@ dt {
     box-sizing: border-box;
 }
 
-dd {
+.entry-outline-detail {
     display: block;
     margin-left: 40px;
     border-bottom: solid 1px rgb(136, 136, 136);
