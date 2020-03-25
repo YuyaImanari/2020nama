@@ -74,16 +74,15 @@ ul {
     font-weight: 700;
 }
 
-.prize-grandprix::before {
+.prize-grandprix::before,.prize-grandprix::after {
+    content: "";
+    display: inline-block;
     background-image: url(https://resource.lap.recochoku.jp/e8/contents/web/project/common/icon_result2.png);
     background-repeat: no-repeat;
     background-size: contain;
     vertical-align: middle;
-}
-
-.prize-grandprix::after {
-    background-image: url(https://resource.lap.recochoku.jp/e8/contents/web/project/common/icon_result2.png);
-
+    width: 40px;
+    height: 40px;
 }
 
 .prize-others {
