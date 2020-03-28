@@ -1,18 +1,12 @@
-head {
-
-}
-
 body {
-    font-family:"Noto Sans Japanese", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;;
+    font-family:"Noto Sans Japanese", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-size: 14px;
     font-weight: 400;
-    font-size: 15px;
-    letter-spacing: .1em;
-    word-break: break-all;
-    display: block;
 }
 
-h1 {
-    text-align: center;
+h1 img {
+    max-width: 60%;
+    margin: 0 20%;
 }
 
 .inner {
@@ -22,10 +16,10 @@ h1 {
 
 .catch {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 1.4px;
-    line-height: 25.2px;
+    line-height: 32.4px;
     text-size-adjust: 100%;
     padding-bottom: 40px;
 }
@@ -49,21 +43,50 @@ h2 {
 }
 
 .schedule-list-time {
+    text-align: left;
+}
+
+.schedule-list-time__inner {
     background-clip: border-box;
     background-color: rgb(214, 11, 15);
     background-image: none;
     background-origin: padding-box;
     color: rgb(255, 255, 255);
-    text-align: center;
     font-size: 15px;
-    font-weight: 400;
-    height: 25px;
+    font-weight: 700;
+    height: 100px;
+    width: 100px;
     line-height: 25px;
     list-style-type: none;
     text-size-adjust: 100%;
-    width: 345px;
-    word-break: break-all;
-    margin: 15px auto 0 auto;
+    margin: 15px auto 0 15px;
+    padding-top: 7px;
+    table-layout: fixed;
+}
+
+.schedule-list-item_year {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.schedule-list-item_month {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.schedule-list-item_day {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.schedule-list-info {
+    position: relative;
+    vertical-align: middle;
+    text-size-adjust: 100%;
+    text-align: left;
 }
 
 .schedule-list-info__text {
