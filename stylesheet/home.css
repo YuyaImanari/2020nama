@@ -12,7 +12,6 @@ body {
 }
 
 h1 {
-    width: 100%;
     text-align: center;
 }
 
@@ -55,7 +54,6 @@ h2 {
     background-image: none;
     background-origin: padding-box;
     color: rgb(255, 255, 255);
-    height: 100px;
     text-align: center;
     font-size: 15px;
     font-weight: 400;
@@ -65,6 +63,11 @@ h2 {
     text-size-adjust: 100%;
     width: 345px;
     word-break: break-all;
+    margin: 15px auto 0 auto;
+}
+
+.schedule-list-info__text {
+    margin-bottom: 10px;
 }
 
 .line {
@@ -90,6 +93,7 @@ ul {
     color: #333;
     font-size: 20px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .prize-grandprix {
@@ -148,6 +152,7 @@ dt {
 .entry-outline-detail {
     display: block;
     margin-left: 40px;
+    padding-bottom: 15px;
     border-bottom: solid 1px rgb(136, 136, 136);
 }
 
