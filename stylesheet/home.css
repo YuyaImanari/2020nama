@@ -7,6 +7,13 @@ h1 img {
     margin: 0 auto;
 }
 
+@media print, screen and (min-width: 1024px) {
+    h1 img {
+        image: url(../image/NAMAヘッダー画像②-2.jpg);
+
+    }
+}
+
 .inner {
     padding: 0 15px;
     margin: 0 232px ;
