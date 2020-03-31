@@ -2,21 +2,32 @@ body {
     font-family:"Noto Sans Japanese", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
 }
 
-h1 img {
-    max-width: 1000px;
+.pc {
+    display: block !important;
+    width: 100%;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
-@media print, screen and (min-width: 1024px) {
-    h1 img {
-        image: url(../image/NAMAヘッダー画像②-2.jpg);
+.sp {
+    display: none !important;
+}
 
+@media only screen and (max-width: 768px) {
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
     }
 }
 
 .inner {
     padding: 0 15px;
-    margin: 0 232px ;
 }
 
 .catch {
@@ -26,7 +37,7 @@ h1 img {
     letter-spacing: 1.4px;
     line-height: 32.4px;
     text-size-adjust: 100%;
-    padding-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -45,10 +56,18 @@ h2 {
 .section-wrap {
     padding: 40px 0;
     box-sizing: border-box;
+    word-break: break-all;
+}
+
+.schedule-list-item_inner {
+    padding: 30px;
 }
 
 .schedule-list-time {
     text-align: left;
+    padding: 0px;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
 }
 
 .schedule-list-time__inner {
@@ -71,14 +90,17 @@ h2 {
 
 .schedule-list-time_year {
     font-size: 18px;
+    line-height: 25.2px;
 }
 
 .schedule-list-time_month {
     font-size: 25px;
+    line-height: 35px;
 }
 
 .schedule-list-time_day {
     font-size: 18px;
+    line-height: 25.2px;
 }
 
 .schedule-list-info {
@@ -86,6 +108,8 @@ h2 {
     vertical-align: middle;
     text-size-adjust: 100%;
     text-align: left;
+    padding-left: 30px;
+    width: 740px;
 }
 
 .schedule-list-info_title {
@@ -157,7 +181,7 @@ li {
 }
 
 .schedule-list-info__title {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     text-align: left;
 }
@@ -169,7 +193,7 @@ li {
 dt {
     display: block;
     color: rgb(51, 51, 51);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 1.4px;
     margin: 23.4px 0;
@@ -181,6 +205,49 @@ dt {
     margin-left: 40px;
     padding-bottom: 15px;
     border-bottom: solid 1px rgb(136, 136, 136);
+}
+
+@media screen and (max-width: 768px) {
+    .inner {
+        padding: 0 15px;
+    }
+
+    .schedule-list-time {
+        width: 100%;
+    }
+
+    .schedule-list-time__inner {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        height: 24px;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+    }
+
+    .schedule-list-time_year {
+        font-size: 16px;
+        padding: 0 4px;
+    }
+
+    .schedule-list-time_month {
+        font-size: 16px;
+        padding: 0 4px;
+    }
+
+    .schedule-list-time_day {
+        font-size: 16px;
+        padding: 0 4px;
+    }
+
+    .schedule-list-info_title {
+        font-size: 18px;
+    }
+
+    .schedule-list-info__text {
+        font-size: 14px;
+    }
 }
 
 .sns {
