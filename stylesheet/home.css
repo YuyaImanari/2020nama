@@ -13,7 +13,7 @@ body {
     display: none !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .pc {
         display: none !important;
     }
@@ -64,7 +64,7 @@ h2 {
 }
 
 .schedule-list-item_inner {
-    padding: 30px;
+    padding: 20px 30px 20px 0;
 }
 
 .schedule-list-time {
@@ -74,11 +74,14 @@ h2 {
     -webkit-font-smoothing: antialiased;
 }
 
-.schedule-list-time__inner {
+.schedule-list-time_inner {
+    background-attachment: scroll;
     background-clip: border-box;
     background-color: rgb(214, 11, 15);
     background-image: none;
     background-origin: padding-box;
+    background-size: auto;
+    box-sizing: border-box;
     color: rgb(255, 255, 255);
     font-weight: 700;
     text-align: center;
@@ -88,8 +91,8 @@ h2 {
     list-style-type: none;
     text-size-adjust: 100%;
     margin: 15px auto 0 15px;
-    padding-top: 7px;
     table-layout: fixed;
+    display: block;
 }
 
 .schedule-list-time_year {
@@ -112,15 +115,16 @@ h2 {
     vertical-align: middle;
     text-size-adjust: 100%;
     text-align: left;
-    padding-left: 30px;
     width: 740px;
 }
 
 .schedule-list-info_title {
     font-size: 22px;
+    list-style: none;
+    text-align: left;
 }
 
-.schedule-list-info__text {
+.schedule-list-info_text {
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -155,6 +159,7 @@ ul {
     color: #333;
     font-size: 20px;
     font-weight: 700;
+    text-align: center;
 }
 
 .prize-grandprix::before,.prize-grandprix::after {
@@ -178,37 +183,77 @@ li {
     display: list-item;
     text-align: left;
     list-style-type: none;
+    font-size: 13px;
+    text-indent: -13px;
 }
 
 .schedule-list-item {
     border-bottom: 2px solid #eee;
 }
 
-.schedule-list-info__title {
+.schedule-list-info {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+
+dl {
+    display: block;
+}
+
+.schedule-list-info_title {
     font-size: 22px;
     font-weight: 700;
     text-align: left;
+    list-style-type: none;
 }
 
 .-gray {
     background-color: #EEEEEE;
 }
 
-dt {
+ul {
     display: block;
-    color: rgb(51, 51, 51);
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    margin: 23.4px 0;
-    box-sizing: border-box;
+    margin: 0 1em 0px 0px;
 }
 
 .entry-outline-detail {
     display: block;
-    margin-left: 220px;
     padding-bottom: 15px;
     text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .entry-outline-detail {
+        margin-left: 220px;
+    }
+
+    dt {
+        width: 200px;
+        float: left;
+        color: rgb(51, 51, 51);
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .entry-outline-detail {
+        border-bottom: 1px solid #888;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+
+    dt {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        padding-bottom: 25px;
+    }
 }
 
 .entry-outline-detail::after {
@@ -223,7 +268,7 @@ dt {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .inner {
         padding: 0 15px;
     }
@@ -232,7 +277,7 @@ dt {
         width: 100%;
     }
 
-    .schedule-list-time__inner {
+    .schedule-list-time_inner {
         width: 100%;
         color: rgb(255, 255, 255);
         height: 24px;
@@ -242,26 +287,30 @@ dt {
         letter-spacing: 1.4px;
     }
 
-    .schedule-list-time_year {
+    .schedule-list-time_year, .schedule-list-time_month, .schedule-list-time_day {
         font-size: 16px;
         padding: 0 4px;
+        margin: 0;
+        box-sizing: border-box;
     }
 
-    .schedule-list-time_month {
-        font-size: 16px;
-        padding: 0 4px;
-    }
-
-    .schedule-list-time_day {
-        font-size: 16px;
-        padding: 0 4px;
+    dl {
+        box-sizing: border-box;
+        display: block;
+        text-align: left;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
 
     .schedule-list-info_title {
         font-size: 18px;
     }
 
-    .schedule-list-info__text {
+    .schedule-list-info_text {
         font-size: 14px;
     }
 }
