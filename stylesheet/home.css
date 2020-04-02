@@ -98,16 +98,19 @@ h2 {
 .schedule-list-time_year {
     font-size: 18px;
     line-height: 25.2px;
+    display: block;
 }
 
 .schedule-list-time_month {
     font-size: 25px;
     line-height: 35px;
+    display: block;
 }
 
 .schedule-list-time_day {
     font-size: 18px;
     line-height: 25.2px;
+    display: block;
 }
 
 .schedule-list-info {
@@ -122,6 +125,7 @@ h2 {
     font-size: 22px;
     list-style: none;
     text-align: left;
+    word-wrap: break-word;
 }
 
 .schedule-list-info_text {
@@ -184,7 +188,6 @@ li {
     text-align: left;
     list-style-type: none;
     font-size: 13px;
-    text-indent: -13px;
 }
 
 .schedule-list-item {
@@ -226,6 +229,7 @@ ul {
 @media screen and (min-width: 768px) {
     .entry-outline-detail {
         margin-left: 220px;
+        text-indent: -13px;
     }
 
     dt {
@@ -289,6 +293,7 @@ ul {
 
     .schedule-list-time_year, .schedule-list-time_month, .schedule-list-time_day {
         font-size: 16px;
+        line-height: 24px;
         padding: 0 4px;
         margin: 0;
         box-sizing: border-box;
@@ -304,6 +309,10 @@ ul {
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
+    }
+
+    .schedule-list-info {
+        float: left;
     }
 
     .schedule-list-info_title {
