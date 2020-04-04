@@ -334,7 +334,7 @@ footer {
     }
 
     .schedule-list-info {
-        float: left;
+        display: flex;
         width: calc(100vw - 30px);
     }
 
@@ -344,5 +344,18 @@ footer {
 
     .schedule-list-info_text {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .catch {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1.0px;
+    }
+
+    .sns img {
+        width: 60px;
+        height: 60px;
     }
 }
