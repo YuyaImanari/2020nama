@@ -1,5 +1,6 @@
 body {
     font-family:"Noto Sans Japanese", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background-color: #eee;
 }
 
 .pc {
@@ -27,9 +28,11 @@ body {
 }
 
 .inner {
-    padding: 0 15px;
+    padding: 40px 30px;
     max-width: 960px;
     margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 20px 40px;
 }
 
 .catch {
@@ -39,7 +42,6 @@ body {
     letter-spacing: 1.4px;
     line-height: 32.4px;
     text-size-adjust: 100%;
-    margin-bottom: 30px;
 }
 
 h2 {
@@ -68,8 +70,6 @@ h2 {
 }
 
 .contest-block {
-    padding: 25px 20px;
-    background-color: #fff;
     background-origin: padding-box;
     margin: 0;
 }
@@ -197,13 +197,8 @@ ul {
 
 dl {
     display: block;
-    float: left;
     margin: 0;
     padding: 0;
-}
-
-.-gray {
-    background-color: #EEEEEE;
 }
 
 .entry-outline-detail {
@@ -216,13 +211,9 @@ dl {
     text-indent: -13px;
 }
 
-.sns {
-    padding: 40px 15px;
-    clear: both;
-}
-
 .sns-btn-wrapper {
     text-align: center;
+    clear: both;
 }
 
 .sns-btn {
@@ -231,7 +222,6 @@ dl {
 }
 
 footer {
-    background-color: rgb(242, 242, 242);
     text-align: center;
 }
 
@@ -295,7 +285,12 @@ footer {
     }
 
     .inner {
-        padding: 0 15px;
+        margin: 30px;
+        box-shadow: rgba(0, 0, 0, 0.2) 9px 12px 24px;
+    }
+
+    .schedule-list-item {
+        margin-bottom: 15px;
     }
 
     .schedule-list-time {
