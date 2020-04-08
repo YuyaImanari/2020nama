@@ -1,5 +1,6 @@
 body {
     font-family:"Noto Sans Japanese", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background-color: #eee;
 }
 
 .pc {
@@ -34,8 +35,8 @@ body {
 
 .catch {
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 550;
     letter-spacing: 1.4px;
     line-height: 32.4px;
     text-size-adjust: 100%;
@@ -46,9 +47,6 @@ h2 {
     background-repeat: no-repeat;
     color: #333;
     text-align: center;
-    font-size: 22px;
-    font-weight: 700px;
-    letter-spacing: 4.4px;
     box-sizing: border-box;
     display: block;
     margin-bottom: 40px;
@@ -58,17 +56,22 @@ h2 {
     padding: 40px 0;
     box-sizing: border-box;
     word-break: break-all;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 15px 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .line {
     border-bottom: 2px solid #333;
     background-repeat: no-repeat;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 600;
+
 }
 
 .contest-block {
-    padding: 25px 20px;
     background-color: #fff;
     background-origin: padding-box;
     margin: 0;
@@ -182,6 +185,7 @@ ul {
     font-size: 22px;
     font-weight: 700;
     text-align: left;
+    word-break: keep-all;
     word-wrap: break-word;
 }
 
@@ -197,13 +201,8 @@ ul {
 
 dl {
     display: block;
-    float: left;
     margin: 0;
     padding: 0;
-}
-
-.-gray {
-    background-color: #EEEEEE;
 }
 
 .entry-outline-detail {
@@ -216,23 +215,25 @@ dl {
     text-indent: -13px;
 }
 
-.sns {
-    padding: 40px 15px;
-    clear: both;
-}
-
 .sns-btn-wrapper {
     text-align: center;
 }
 
-.sns-btn {
+.sns-btn-wrapper li {
+    display: inline;
     padding: 0 15px;
     text-decoration: none;
 }
 
+.sponsor_logo img {
+    max-width: 960px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
 footer {
-    background-color: rgb(242, 242, 242);
     text-align: center;
+    padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -280,6 +281,25 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    .section-wrap {
+        margin: 30px 20px;
+        box-shadow: 9px 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .line {
+        border-bottom: 2px solid #333;
+        background-repeat: no-repeat;
+        font-size: 30px;
+        letter-spacing: 4px;
+        font-weight: 600;
+        word-wrap: break-word;
+    }
+
+    .catch {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
     .entry-outline-detail {
         padding-bottom: 25px;
         font-size: 13px;
@@ -345,17 +365,22 @@ footer {
     .schedule-list-info_text {
         font-size: 14px;
     }
+
+    .sns-btn-wrapper {
+        display: inline;
+        padding: 0 10px;
+    }
 }
 
 @media screen and (max-width: 320px) {
-    .catch {
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 1.0px;
+    .line {
+        letter-spacing: 2.5px;
+        font-size: 25px;
     }
 
-    .sns img {
-        width: 60px;
-        height: 60px;
+    .catch {
+        font-size: 16px;
+        font-weight: 550;
+        letter-spacing: .5px;
     }
 }
