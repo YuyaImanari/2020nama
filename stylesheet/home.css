@@ -28,9 +28,11 @@ body {
 }
 
 .inner {
-    padding: 0 15px;
+    padding: 40px 30px;
     max-width: 960px;
     margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 20px 40px;
 }
 
 .catch {
@@ -40,7 +42,6 @@ body {
     letter-spacing: 1.4px;
     line-height: 32.4px;
     text-size-adjust: 100%;
-    margin-bottom: 30px;
 }
 
 h2 {
@@ -217,6 +218,7 @@ dl {
 
 .sns-btn-wrapper {
     text-align: center;
+    clear: both;
 }
 
 .sns-btn-wrapper li {
@@ -315,7 +317,12 @@ footer {
     }
 
     .inner {
-        padding: 0 15px;
+        margin: 30px;
+        box-shadow: rgba(0, 0, 0, 0.2) 9px 12px 24px;
+    }
+
+    .schedule-list-item {
+        margin-bottom: 15px;
     }
 
     .schedule-list-time {
