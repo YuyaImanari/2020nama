@@ -31,7 +31,7 @@ body {
 
 .inner {
     padding: 40px 30px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.2) 15px 20px 40px;
@@ -200,6 +200,12 @@ ul {
     line-height: 27.2px;
 }
 
+.schedule-list-info_text-memo {
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
 dl {
     display: block;
     margin: 0;
@@ -229,14 +235,18 @@ dl {
 }
 
 li .sponsor_logo_1 img {
-    max-width: 880px;
+    max-width: 940px;
     padding-bottom: 50px;
     cursor: pointer;
 }
 
 li .sponsor_logo_2 img {
-    max-width: 880px;
+    max-width: 940px;
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
 
 footer {
