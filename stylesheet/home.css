@@ -73,9 +73,36 @@ h2 {
 }
 
 .contest-block {
-    background-color: #fff;
-    background-origin: padding-box;
+    display: block;
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 0 0 30px 100px;
+    display: inline-block;
+    width: 35%;
+}
+
+.contest-block .box-title {
+    font-size: 20px;
+    background-color: #ffff66;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: .5px solid #333;
+}
+
+.contest-block p {
+    background-color: #ffffdd;
+    text-align: center;
+    padding: 30px 20px;
     margin: 0;
+    border-bottom: .5px solid #333;
+    border-right: .5px solid #333;
+    border-left: .5px solid #333;
 }
 
 ul {
@@ -84,38 +111,6 @@ ul {
     box-sizing: inherit;
     font-size: 14px;
 }
-
-.prize-list {
-    color: #333;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.prize-grandprix {
-    color: #333;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.prize-grandprix::before,.prize-grandprix::after {
-    content: "";
-    display: inline-block;
-    background-image: url(https://resource.lap.recochoku.jp/e8/contents/web/project/common/icon_result2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-}
-
-.prize-others {
-    color: #333;
-    font-size: 20px;
-    font-weight: 600;
-}
-
 
 .schedule-list li {
     display: list-item;
