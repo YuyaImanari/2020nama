@@ -16,7 +16,7 @@ body {
     position: relative;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
     .pc {
         display: none !important;
     }
@@ -43,6 +43,16 @@ body {
     letter-spacing: 1.4px;
     line-height: 32.4px;
     text-size-adjust: 100%;
+}
+
+.catch-2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 1.4px;
+    line-height: 32.4px;
+    text-size-adjust: 100%;
+    padding-top: 30px;
 }
 
 .nama {
@@ -238,9 +248,9 @@ footer {
     padding-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     .inner {
-        max-width: 82%;
+        max-width: 78%;
     }
     
     .section-wrap {
@@ -295,7 +305,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .line {
         border-bottom: 2px solid #333;
         background-repeat: no-repeat;
@@ -308,6 +318,20 @@ footer {
     .catch {
         font-size: 18px;
         letter-spacing: 1px;
+    }
+
+    .catch-2 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding-top: 30px;
+    }
+
+    .nama {
+        font-size: 35px;
+    }
+
+    .none {
+        display: none;
     }
 
     .entry-outline-detail {
@@ -327,6 +351,10 @@ footer {
     .inner {
         margin: 30px;
         box-shadow: rgba(0, 0, 0, 0.2) 9px 12px 24px;
+    }
+
+    .section-wrap {
+        max-width: 92%
     }
 
     .schedule-list-item {
