@@ -75,6 +75,7 @@ h2 {
     box-sizing: border-box;
     word-break: break-all;
     margin: 50px auto;
+    max-width: 92%;
 }
 
 .line {
@@ -228,17 +229,6 @@ dl {
     text-decoration: none;
 }
 
-li .sponsor_logo_1 img {
-    cursor: pointer;
-    max-width: 45%;
-    padding-bottom: 30px;
-}
-
-li .sponsor_logo_2 img {
-    cursor: pointer;
-    max-width: 95%;
-}
-
 a {
     text-decoration: none;
 }
@@ -251,10 +241,6 @@ footer {
 @media screen and (min-width: 1025px) {
     .inner {
         max-width: 78%;
-    }
-    
-    .section-wrap {
-        max-width: 92%;
     }
     
     .schedule-list-item {
@@ -302,6 +288,18 @@ footer {
         text-decoration-color: rgb(51, 51, 51);
         text-decoration-style: solid;
         display: block;
+    }
+
+    .sponsor_logo_1 img {
+        cursor: pointer;
+        max-width: 40%;
+        transform: translate(60px, 0);
+    }
+
+    .sponsor_logo_2 img {
+        cursor: pointer;
+        max-width: 85%;
+        transform: translate(60px, 0);
     }
 }
 
@@ -354,7 +352,7 @@ footer {
     }
 
     .section-wrap {
-        max-width: 92%
+        margin: 30px auto;
     }
 
     .schedule-list-item {
@@ -412,6 +410,17 @@ footer {
     .sns-btn-wrapper {
         display: inline;
         padding: 0 10px;
+    }
+
+    li .sponsor_logo_1 img {
+        cursor: pointer;
+        max-width: 45%;
+        padding-bottom: 30px;
+    }
+
+    li .sponsor_logo_2 img {
+        cursor: pointer;
+        max-width: 95%;
     }
 }
 
